@@ -7,8 +7,6 @@
 (defmodule lighthouse-http-api
   (export (init 2)))
 
-(include-lib "include/location.lfe")
-
 ;;; Request callbacks
 
 (defun init [req opts]
@@ -41,7 +39,7 @@
   (lighthouse-repo:insert loc))
 
 (defun decode-location [loc]
-  (lighthouse-location-pb:decode_msg loc 'location))
+  (lighthouse-location:decode loc))
 
 (defun resp-opts []
   #M(#"content-type" #"text/plain; charset=utf-8"))
