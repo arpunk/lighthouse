@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+message location {
+  required float latitude = 1;
+  required float longitude = 2;
+  optional string geohash = 3;
+}

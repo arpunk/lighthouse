@@ -1,0 +1,30 @@
+{"1.1.0",
+[{<<"cowboy">>,
+  {git,"git@github.com:ninenines/cowboy.git",
+       {ref,"d8cdd9bd15e76dca3014f6f76c0ab6666b1dbda3"}},
+  0},
+ {<<"cowlib">>,
+  {git,"https://github.com/ninenines/cowlib",
+       {ref,"07cde7c6def6eeed0174b270229e7d5175673d87"}},
+  1},
+ {<<"erstar">>,
+  {git,"git@github.com:keynslug/erstar.git",
+       {ref,"71b6699955a6a28714b71834a84273560b3945e9"}},
+  0},
+ {<<"goldrush">>,{pkg,<<"goldrush">>,<<"0.1.9">>},2},
+ {<<"lager">>,{pkg,<<"lager">>,<<"3.2.4">>},1},
+ {<<"lfe">>,{pkg,<<"lfe">>,<<"1.2.0">>},0},
+ {<<"lumber">>,
+  {git,"git@github.com:arpunk/lumber.git",
+       {ref,"771a612d26f6244f228ea63ea260c081bd12a9a9"}},
+  0},
+ {<<"ranch">>,
+  {git,"https://github.com/ninenines/ranch",
+       {ref,"40809cd2b257a8a53bcb5588ecaa88cc5381ff5c"}},
+  1}]}.
+[
+{pkg_hash,[
+ {<<"goldrush">>, <<"F06E5D5F1277DA5C413E84D5A2924174182FB108DABB39D5EC548B27424CD106">>},
+ {<<"lager">>, <<"A6DEB74DAE7927F46BD13255268308EF03EB206EC784A94EAF7C1C0F3B811615">>},
+ {<<"lfe">>, <<"257708859C0A6949F174CECEE6F08BB5D6F08C0F97EC7B75C07072014723ECBC">>}]}
+].
