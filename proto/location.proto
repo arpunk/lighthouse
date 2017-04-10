@@ -1,7 +1,15 @@
 syntax = "proto2";
 
 message location {
-  required float latitude = 1;
-  required float longitude = 2;
-  optional string geohash = 3;
+  required string id = 1;
+  required float latitude = 2;
+  required float longitude = 3;
+  required string geohash = 4;
+  required int64 timestamp = 5;
+  required status status = 6 [default=unavailable];
+
+  enum status {
+    available = 0;
+    unavailable = 1;
+  }
 }

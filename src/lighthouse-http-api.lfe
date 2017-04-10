@@ -5,6 +5,8 @@
 |#
 
 (defmodule lighthouse-http-api
+
+  ;; Request callbacks
   (export (init 2)))
 
 ;;; Request callbacks
