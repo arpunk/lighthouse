@@ -15,3 +15,6 @@ _deps
 _plugins
 _tdeps
 logs
+/Mnesia.nonode@nohost/*
+/src/lighthouse-location-pb.erl
+/include/lighthouse-location-pb.hrl
