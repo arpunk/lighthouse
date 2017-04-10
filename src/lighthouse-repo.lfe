@@ -5,13 +5,18 @@
 |#
 
 (defmodule lighthouse-repo
-  (export all))
+
+  ;; API
+  (export (init 0)
+          (insert 1)))
+
+(include-lib "include/location.lfe")
 
 ;;; API
 
 (defun init []
   (let* [(nodes `(,(node)))
-         (attrs '[latitude longitude geohash])]
+         (attrs `,(fields-location))]
     (mnesia:stop)
     (mnesia:change_config 'extra_db_nodes nodes)
     (mnesia:create_schema nodes)
